@@ -3,7 +3,7 @@
 
 
 export interface EnvironmentConfig {
-    baseUrl: string:
+    baseUrl: string;
  }
  
  export function getEnvironmentConfig(
