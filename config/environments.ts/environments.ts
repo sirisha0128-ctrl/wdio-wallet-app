@@ -6,19 +6,19 @@ export interface EnvironmentConfig {
     baseUrl: string:
  }
  
- export function getenvironmentconfig(
+ export function getEnvironmentConfig(
     envName: string = 'local'
   ): EnvironmentConfig {
   switch (envName.toLowercase()) {
-   case 'local':
+   Case 'local':
     return { baseUrl: 'http://localhost:3000'};
-   case 'dev':
+   Case 'dev':
     return { baseUrl: 'http://dev.wallet.treetracker.org'};
-   case 'prod':
+   Case 'prod':
     return { baseUrl: 'http://wallet.treetracker.org'};
    default:
     throw new Error(
-      'Unknown environment: ${envName}. Available environments: local, dev, prod'
+      `Unknown environment: ${envName}. Available environments: local, dev, prod`
      );
    }
   }
