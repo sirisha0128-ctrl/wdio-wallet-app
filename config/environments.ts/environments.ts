@@ -9,7 +9,7 @@ export interface EnvironmentConfig {
  export function getEnvironmentConfig(
     envName: string = 'local'
   ): EnvironmentConfig {
-  switch (envName.toLowercase()) {
+  switch (envName.toLowerCase()) {
    Case 'local':
     return { baseUrl: 'http://localhost:3000'};
    Case 'dev':
